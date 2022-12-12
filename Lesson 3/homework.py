@@ -8,7 +8,7 @@ s = input("""Напишите фразу,которую хотите прове�
 
 print(s)
 
-s = s.replace(" ", "").replace(".", "").replace("!", "").replace(",", "").replace(";", "").replace(":", "").replace("?", "")
+s = s.replace(" ", "").replace(".", "").replace("!", "").replace(",", "").replace(";", "").replace(":", "").replace("?", "").replace("-", "").replace("\"", "").replace("\'", "")
 print(s)
 s = s.lower()
 print(s.lower())
