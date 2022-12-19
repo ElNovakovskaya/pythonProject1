@@ -2,12 +2,9 @@
 Nalog_1 = 3
 Nalog_2 = 5
 
-# user_choise = ("Назовите Ваше имя")
+
 name = input("Назовите Ваше имя")
 print(f"Здравствуйте!", name)
-
-# input(f"Здравствуйте!", name)
-# print("Здравствуйте!", name)
 
 user_choise = input("""Укажите сумму дохода за отчетный период?
 >>""")
@@ -28,3 +25,4 @@ if  (user_nalog == "2"):
 dohod = round(user_choise - summ, 2)
 print(f"Вы должны задекларировать Чистый доход в сумме {dohod} грн")
 print("Спасибо!")
+
