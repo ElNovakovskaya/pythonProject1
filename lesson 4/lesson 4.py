@@ -1,18 +1,38 @@
 
-text = input("""
->>""")
 
-if 'привіт' in text.lower():
-    print('Доброго вечора, я бот з України!')
+user_input_1 = {
+    "hello",
+    "привіт",
+    "доброго дня"
+}
+user_input_2 = {
+    "як справи?",
+    "що робиш?",
+    "чим займаєшся?"
+}
+user_input_3 = {
+    "бувай",
+    "гудбай",
+    "до зустрічі"
+}
 
-else:
-    print('Привіт is not in text')
+bot_answer_1 = 'Доброго вечора, я бот з України!'
+bot_answer_2 = 'Вчусь програмувати на Python!'
+bot_answer_3 = 'Побачимось у мережі, I\'ll be back'
+bot_answer_error = 'Дуже цікаво, але, нажаль, нічого не зрозуміло'
 
-text = input("""
->>""")
-if 'чим займаєшся' in text.lower():
-    print('Вчусь програмувати на Python!')
-else:
-    print('Дуже цікаво, але, нажаль, нічого не зрозуміло')
+while True:
+    user_input = input("""
+    >>""")
+    if user_input.lower() in user_input_1:
+        print(bot_answer_1)
+    elif user_input.lower() in user_input_2:
+        print(bot_answer_2)
+    elif user_input.lower() in user_input_3:
+        print(bot_answer_3)
+        break
+    else:
+        print(bot_answer_error)
+
 
 
