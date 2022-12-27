@@ -7,6 +7,6 @@ while True:
       print("Сумма чисел=", sum)
       break
    try:
-      sum = sum + int(text)
+      sum = sum + float(text)
    except Exception:
       print("Неправильный фориат числа, попробуйте снова")
