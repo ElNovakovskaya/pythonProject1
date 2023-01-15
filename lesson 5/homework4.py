@@ -9,4 +9,4 @@ while True:
    try:
       sum = sum + float(text)
    except Exception:
-      print("Неправильный фориат числа, попробуйте снова")
+      print("Введіть число або sum будь-ласка!")
